@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    color: #333;
+    background-color: #ccc;
+}
+
+body.dark {
+    background-color: #333;
+    color: #ccc;
+}
+
+.switch__container {
+    padding: 1.5rem;
+    border: 3px solid currentColor;
+    border-radius: 1rem;
+    transition: transform .2s;
+}
+
+.switch__icon {
+    width: 4rem;
+    height: 4rem;
+    fill: currentColor;
+}
+
+.hide { display: none; }
